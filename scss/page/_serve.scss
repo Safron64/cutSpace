@@ -1,0 +1,46 @@
+.serve {
+  position: relative;
+
+  &:before {
+    background-color: $grey;
+    bottom: -30px;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    z-index: -1;
+
+    @media (min-width: 992px) {
+      bottom: 185px;
+      height: 704px;
+      top: unset;
+    }
+  }
+
+  &__header {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    @include list-unstyled;
+
+    @media (min-width: 992px) {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    & + & {
+      @media (max-width: 991.98px) {
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// helpers
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
+// base - располагать ниже helpers
+@import 'base/fonts';
+@import 'base/reset';
+
+// components
+@import 'components/container';
+@import 'components/button';
+@import 'components/logo';
+
+// layout
+@import 'layout/site';
+@import 'layout/header';
+@import 'layout/page';
+@import 'layout/footer';
+@import 'layout/footer-unit';
+
+// page
+@import 'page/intro';
+@import 'page/intro-form';
+@import 'page/partners';
+@import 'page/provide';
+@import 'page/provide-hint';
+@import 'page/using';
+@import 'page/serve';
+@import 'page/serve-card';
+@import 'page/choose';
+@import 'page/choose-item';
+@import 'page/words';
+@import 'page/words-item';
+@import 'page/experience';

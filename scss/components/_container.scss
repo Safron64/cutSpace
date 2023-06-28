@@ -1,0 +1,21 @@
+.container {
+  padding: 0 15px;
+  width: 100%;
+
+  @media (min-width: 992px) {
+    box-sizing: content-box;
+    margin: 0 auto;
+    max-width: 962px;
+    width: auto;
+  }
+
+  @media (min-width: 1220px) {
+    max-width: 1110px;
+  }
+
+  &--wide {
+    @media (min-width: 1220px) {
+      max-width: 1150px;
+    }
+  }
+}

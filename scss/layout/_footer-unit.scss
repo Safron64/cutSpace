@@ -1,0 +1,38 @@
+$footer-transition: 750ms;
+
+.footer-unit {
+  &__title {
+    cursor: pointer;
+    margin-bottom: 0;
+    transition: margin $footer-transition ease;
+
+    @media (min-width: 576px) {
+      cursor: auto;
+      margin-bottom: 18px;
+      transition: none;
+    }
+
+    .footer-unit--expanded & {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__list {
+    @include list-unstyled;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.93;
+
+    @media (max-width: 575.98px) {
+      height: 0px;
+      overflow: hidden;
+      transition: height $footer-transition ease;
+    }
+  }
+
+  &__item {
+    & + & {
+      margin-top: 13px;
+    }
+  }
+}

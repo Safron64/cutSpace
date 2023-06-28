@@ -1,0 +1,20 @@
+.choose-item {
+  text-align: center;
+
+  &__icon {
+    @include bg-circle(70px);
+    margin: 0 auto 15px;
+  }
+
+  &__svg {
+    fill: $aqua;
+  }
+
+  &__title {
+    margin-bottom: 2px;
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      font-size: 24px;
+    }
+  }
+}

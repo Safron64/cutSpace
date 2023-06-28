@@ -1,0 +1,17 @@
+.site {
+  &--menu-opened {
+    overflow: hidden;
+  }
+
+  &__header {
+    @media (max-width: 991.98px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__page {
+    @media (max-width: 991.98px) {
+      margin-bottom: 60px;
+    }
+  }
+}

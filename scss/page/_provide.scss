@@ -1,0 +1,145 @@
+.provide {
+  &__body {
+    position: relative;
+
+    @media (min-width: 992px) {
+      height: 456px;
+    }
+
+    @media (min-width: 1220px) {
+      height: 550px;
+    }
+  }
+
+  &__gallery {
+    margin-bottom: 30px;
+
+    @media (min-width: 992px) {
+      display: flex;
+      gap: 33px;
+      left: -150px;
+      margin-bottom: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    @media (min-width: 1220px) {
+      left: -237px;
+    }
+  }
+
+  &__card {
+    margin: 0 auto;
+    max-width: 385px;
+    position: relative;
+
+    & + & {
+      @media (max-width: 991.98px) {
+        margin-top: 30px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      cursor: pointer;
+      width: 320px;
+    }
+
+    @media (min-width: 1220px) {
+      width: 385px;
+    }
+  }
+
+  &__picture {
+    border-radius: 20px;
+    overflow: hidden;
+
+    &--sharp {
+      @media (min-width: 992px) {
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+
+  &__image {
+    @include image;
+  }
+
+  &__hint {
+    bottom: 87px;
+    left: 0;
+    position: absolute;
+    z-index: 20;
+
+    @media (max-width: 991.98px) {
+      display: flex;
+      justify-content: center;
+      padding: 0 20px;
+      width: 100%;
+    }
+
+    @media (min-width: 992px) {
+      opacity: 0;
+      visibility: hidden;
+      width: 300px;
+      right: -46px;
+      padding: 0;
+      left: unset;
+      transition: $base-duration ease;
+    }
+
+    .provide__card--half & {
+      @media (min-width: 992px) {
+        right: -160px;
+      }
+
+      @media (min-width: 1440px) {
+        right: -46px;
+      }
+    }
+
+    .provide__card:hover & {
+      @media (min-width: 992px) {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  %text-block {
+    @media (min-width: 992px) {
+      margin-left: auto;
+      width: 374px;
+    }
+
+    @media (min-width: 1220px) {
+      margin-right: -10px;
+    }
+  }
+
+  &__content {
+    @extend %text-block;
+  }
+
+  &__title {
+    @extend %text-block;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media (min-width: 992px) {
+      text-align: initial;
+    }
+
+    @media (min-width: 1220px) {
+      padding-top: 68px;
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+    width: 100%;
+
+    @media (min-width: 992px) {
+      width: auto;
+    }
+  }
+}

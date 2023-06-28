@@ -1,0 +1,88 @@
+.words {
+  @media (min-width: 768px) {
+    @include anchor-margin;
+  }
+
+  &__body {
+    @media (min-width: 992px) {
+      padding: 60px 0 42px 0;
+    }
+  }
+
+  &__header {
+    margin-bottom: 40px;
+
+    @media (min-width: 992px) {
+      align-items: center;
+      display: flex;
+      gap: 100px;
+      margin-bottom: 58px;
+    }
+
+    @media (min-width: 1220px) {
+      gap: 259px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+
+    @media (min-width: 992px) {
+      flex-shrink: 0;
+      margin-bottom: 0;
+      text-align: initial;
+      width: 455px;
+    }
+  }
+
+  &__subtitle {
+    color: $grey-dark;
+    margin-right: 45px;
+  }
+
+  &__row {
+    @media (min-width: 992px) {
+      padding-right: 40px;
+      position: relative;
+    }
+  }
+
+  &__list {
+    @include list-unstyled;
+
+    @media (min-width: 768px) {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    @media (max-width: 991.98px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    & + & {
+      @media (max-width: 767.98px) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &__icon {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: -40px;
+    }
+  }
+}

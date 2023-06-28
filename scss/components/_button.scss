@@ -1,0 +1,43 @@
+.button {
+  background-color: $white;
+  color: $black;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: normal;
+  padding: 17px 37px;
+  text-align: center;
+  transition: background-color $base-duration ease;
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+
+  &:focus {
+    box-shadow: 0 0 15px $orange;
+    outline: none;
+  }
+
+  &--accented {
+    background-color: $orange;
+    color: $white;
+
+    &:hover {
+      background-color: $orange-dark;
+    }
+  }
+
+  &--blue {
+    &:hover {
+      background-color: $aqua;
+      outline: 1px solid $white;
+    }
+
+    &:focus {
+      box-shadow: 0 0 15px $white;
+    }
+  }
+}

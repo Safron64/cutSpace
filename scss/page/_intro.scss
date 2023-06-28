@@ -1,0 +1,57 @@
+.intro {
+  @media (min-width: 768px) {
+    @include anchor-margin;
+  }
+
+  &__body {
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+    }
+
+    @media (min-width: 1220px) {
+      grid-template-columns: 1fr 540px;
+    }
+  }
+
+  &__content {
+    @media (min-width: 992px) {
+      padding-top: 60px;
+      padding-right: 85px;
+    }
+
+    @media (min-width: 1220px) {
+      padding-top: 127px;
+      padding-right: 103px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    text-align: center;
+
+    @media (min-width: 992px) {
+      margin-right: -170px;
+      position: relative;
+      text-align: initial;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 44px;
+  }
+
+  &__picture {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+      border-radius: 40px 40px 40px 0px;
+      overflow: hidden;
+    }
+  }
+
+  &__image {
+    @include image;
+  }
+}

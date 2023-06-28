@@ -1,0 +1,25 @@
+@mixin list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+@mixin image {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin bg-circle($size: 45px) {
+  align-items: center;
+  background-color: rgba($aqua, 0.2);
+  border-radius: 50%;
+  display: flex;
+  height: $size;
+  justify-content: center;
+  width: $size;
+}
+
+@mixin anchor-margin($height: 110px) {
+  padding-top: $height;
+  margin-top: $height * -1;
+  background-clip: content-box;
+}

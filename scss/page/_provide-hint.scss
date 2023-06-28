@@ -1,0 +1,33 @@
+.provide-hint {
+  align-items: center;
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+  display: flex;
+  padding: 26px 26px;
+  text-align: center;
+
+  @media (min-width: 992px) {
+    padding: 32px 29px;
+    text-align: initial;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    display: none;
+
+    @media (min-width: 992px) {
+      @include bg-circle(45px);
+      flex-shrink: 0;
+    }
+  }
+
+  &__content {
+    @media (min-width: 992px) {
+      margin-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.choose {
+  @media (min-width: 768px) {
+    @include anchor-margin;
+  }
+
+  &__title {
+    margin-bottom: 58px;
+    text-align: center;
+  }
+
+  &__list {
+    @include list-unstyled;
+
+    @media (min-width: 576px) {
+      display: grid;
+      gap: 60px 35px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 992px) {
+      display: flex;
+      gap: 35px;
+    }
+  }
+
+  &__item {
+    & + & {
+      @media (max-width: 575.98px) {
+        margin-top: 60px;
+      }
+    }
+  }
+}

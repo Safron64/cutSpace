@@ -1,0 +1,101 @@
+.using {
+  @media (min-width: 768px) {
+    @include anchor-margin;
+  }
+
+  &__body {
+    background: url('./assets/images/bg/circle-group.svg') no-repeat top right, $aqua;
+    background-size: 175px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px 20px;
+    position: relative;
+
+    @media (min-width: 576px) {
+      background-size: 150px auto;
+    }
+
+    @media (min-width: 992px) {
+      background: url('./assets/images/bg/circle-group.svg') no-repeat top right,
+        url('./assets/images/bg/quarter.svg') no-repeat 46% 100%, $aqua;
+      background-size: 225px auto, 304px auto;
+      padding: 91px 95px;
+    }
+  }
+
+  &__picture {
+    display: none;
+
+    @media (min-width: 992px) {
+      background-color: $white;
+      border-top-right-radius: 21px;
+      bottom: 0;
+      display: block;
+      left: 0;
+      max-width: 450px;
+      padding-right: 25px;
+      padding-top: 25px;
+      position: absolute;
+    }
+
+    @media (min-width: 1220px) {
+      max-width: 556px;
+    }
+  }
+
+  &__image {
+    @include image;
+  }
+
+  &__content {
+    color: $white;
+
+    @media (min-width: 992px) {
+      margin-left: auto;
+      width: 364px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__action {
+    margin-top: 30px;
+
+    @media (min-width: 992px) {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    & + & {
+      @media (max-width: 991.98px) {
+        margin-top: 10px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      width: 172px;
+    }
+
+    &--play {
+      padding-left: 29px;
+      padding-right: 29px;
+      white-space: nowrap;
+    }
+  }
+
+  &__icon {
+    fill: $orange;
+    margin-right: 5px;
+    transition: $base-duration ease;
+
+    .using__button--play:hover & {
+      fill: $white;
+    }
+  }
+}

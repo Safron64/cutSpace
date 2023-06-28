@@ -1,0 +1,49 @@
+.page {
+  &__section {
+    margin-bottom: 60px;
+
+    &--intro {
+      @media (min-width: 992px) {
+        margin-bottom: 100px;
+      }
+    }
+
+    &--partners {
+      @media (min-width: 992px) {
+        margin-bottom: 91px;
+      }
+    }
+
+    &--provide {
+      @media (min-width: 992px) {
+        margin-bottom: 154px;
+      }
+    }
+
+    &--using {
+      @media (min-width: 992px) {
+        margin-bottom: 144px;
+      }
+    }
+
+    &--serve {
+      margin-bottom: 90px;
+
+      @media (min-width: 992px) {
+        margin-bottom: 113px;
+      }
+    }
+
+    &--choose {
+      @media (min-width: 992px) {
+        margin-bottom: 110px;
+      }
+    }
+
+    &--words {
+      @media (min-width: 992px) {
+        margin-bottom: -3px;
+      }
+    }
+  }
+}
