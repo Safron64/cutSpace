@@ -1,6 +1,6 @@
 ## Верстка лендинга Cutspace с адаптивом
 
-[limonbird.github.io/cutspace/](safron64.github.io/CutSpace/)
+[CutSpace](safron64.github.io/CutSpace/)
 
 - десктопная версия выполнена по макету figma
 - адаптив выполнен без макета
